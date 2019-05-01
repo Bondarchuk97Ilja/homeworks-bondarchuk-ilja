@@ -1,15 +1,5 @@
 
 /*1. Создать функцию, которая принимает два элемента. Функция проверяет, является ли первый элемент родителем для второго:*/
-/*function isParent(parent,child) {
-    if (!parent) return console.log("Введите значение родителя");
-    if (!child) return console.log("Введите значение последователя");
-    return parent.contains(child);
-    };
-
-console.log(isParent(document.body.children[0], document.querySelector('mark')));
-console.log(isParent(document.body.children[1], document.querySelector('mark')));
-console.log(isParent(document.body.children[1], document.querySelector('li')));*/
-
 function isParent(parent,child) {
     if (!parent) return console.log("Введите значение родителя");
     if (!child) return console.log("Введите значение последователя");
@@ -44,7 +34,7 @@ console.log(prevUl);
 console.log(nextUl);
 
 /*4. Посчитать количество элементов li в списке*/
-let numElementsLi = document.querySelectorAll('li')
+let numElementsLi = getUlSelector.querySelectorAll('li')
 console.log(numElementsLi.length);
 
 
