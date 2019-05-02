@@ -3,15 +3,9 @@ let getUl = document.querySelector('ul');
 getUl.classList.toggle('list');
 let nextLink;
 /*2. Найти в коде ссылку, находящуюся после списка ul, и добавить id=link*/
-for (i = 0; i < document.body.children.length; i++){
-    if(getUl.nextElementSibling.tagName === 'A'){
-        nextLink = getUl.nextElementSibling;
-    } else {
-        getUl = getUl.nextElementSibling;
-    }
-}
+let getA = document.querySelector('ul ~ a');
 
-nextLink.setAttribute('id','link');
+getA.setAttribute("id","link")
 
 /*3. На li через один (начиная с самого первого) установить класс “item”*/
 let getAllLis = document.querySelectorAll('li');
