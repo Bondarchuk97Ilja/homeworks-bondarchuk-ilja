@@ -1,6 +1,6 @@
 /*1. Найти в коде список ul и добавить класс “list”*/
 let getUl = document.querySelector('ul');
-getUl.setAttribute('class','list');
+getUl.classList.toggle('list');
 let nextLink;
 /*2. Найти в коде ссылку, находящуюся после списка ul, и добавить id=link*/
 for (i = 0; i < document.body.children.length; i++){
