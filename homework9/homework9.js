@@ -19,8 +19,8 @@ const organisation = {
     info: { employees: ['Vlad', 'Olga'], partners: ['Microsoft', 'Facebook', 'Xing']   }
 };
 
-const getInfo = function ({name = 'Unknown',info : {employees:[...emp],partners:[...part]} = 'Unknown'}) {
-return console.log(`${name} ${part[0]} ${part[1]} `)
+const getInfo = function ({name = 'Unknown',info : {employees:[...emp],partners:[partner1, partner2, ...part]} = 'Unknown'}) {
+return console.log(`${name} ${partner1} ${partner2} `)
 }
 
 console.log(getInfo(organisation));

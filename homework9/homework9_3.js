@@ -31,15 +31,15 @@ console.log(price.getPriceWithDiscount());
 const square = {
     width: 10,
     height: 10,
-    upHeight
+    upWidth
 };
 
-function upHeight() {
+function upWidth() {
     return ++this.width
 }
 
 console.log(square.width);
-square.upHeight();
+square.upWidth();
 console.log(square.width);
 
 /*4. Создать объект “вычислитель”, у которого есть числовое свойство
