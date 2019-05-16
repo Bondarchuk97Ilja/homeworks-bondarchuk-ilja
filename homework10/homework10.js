@@ -56,7 +56,7 @@ d. получить строку-перевертыш
 
 console.log ("Task 3");
 
-let encryption =  (function  (encrypt) {
+const encryption =  (function  (encrypt) {
       //первый блок
     function checkEncrypt (string){
         string === '' ? string = ''
@@ -114,7 +114,7 @@ console.log ("Task 4");
 
 let error = 'Put the number';
 
-let calculator = (function() {
+const calculator = (function() {
     let num = 0;
     function putNum(value){
         if (typeof value !== 'number')
